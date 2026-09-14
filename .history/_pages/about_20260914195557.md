@@ -9,7 +9,7 @@ redirect_from:
 
 # 王世强
 
-📧 wangshiqiang0508@gmail.com | 📞 17604091853
+📧 wangshiqiang0508@163.com | 📞 17604091853
 
 I am an undergraduate student at **Dalian University of Technology**, School of Future Technology, Artificial Intelligence Innovation Class. My major ranking is **7/58**. My English proficiency: CET‑4 545, CET‑6 548.
 
