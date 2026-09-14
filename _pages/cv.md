@@ -9,60 +9,48 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* B.S. in Artificial Intelligence (Innovation Class), Dalian University of Technology, 2023 - Present
-  * School of Future Technology
-  * Major Ranking: 7 / 58
-  * English: CET-4 545 / CET-6 548
-  * Representative Courses: Probability and Statistics A (100), Optimization Methods (98), Deep Learning (94), Large-Model Technology and Applications (94), Fundamentals of Computer Vision (90), Knowledge Engineering (90)
+# 王世强
 
-Research Experience
-======
-* **First-Author Paper, AAAI 2027 Submission (under double-blind review)**, 2026 - Present
-  * *Seeing Through Corneal Reflections: Open-Vocabulary Object Recognition from Corneal Imagery*
-  * Proposed an optics-guided prompt synthesis pipeline to build paired synthetic training data, and designed a Degradation-Aware Reflection Enhancement Network (REDA-Net) with scene-guided privileged-context training, forming an iris localization → reflection enhancement → VLM zero-shot open-vocabulary recognition framework.
-  * Result: semantic matching accuracy improved from 51.50% to 66.17% on the synthetic benchmark; end-to-end inference latency of **319.89 ms** on Raspberry Pi 5.
+## 教育背景
 
-Projects
-======
-* **Bidirectional Multimodal Sign-Language Translation System on RK3588** (Core Member), 2025
-  * Built the end-to-end code framework (data collection → keypoint extraction → model inference → visual feedback) for hearing-impaired users on the Rockchip RK3588 platform.
-  * Recognition: MediaPipe 21-hand-keypoint extraction, CNN for static gestures, CNN + Transformer for continuous sign-language temporal modeling; Generation: text tokenization mapped to sign-language clips for animation.
-  * Deployed on RK3588 ELF2 with NPU acceleration (RKNN), supporting 30+ static gestures and continuous phrases in real time.
-  * Award: 2nd Prize (National), 8th National College Embedded Chip & System Design Competition.
+**大连理工大学** | **未来技术学院人工智能创新班**（2023 - 至今）
 
-* **Crowd-Perception Blind-Assisting System Fusing Smart Cane & Smart Glasses** (Team Leader), 2025
-  * Designed a distributed collaborative scheme: smart cane for ground-level hazards, smart glasses for front-view risks; led requirement breakdown and module integration.
-  * Cane: YOLOv8 dynamic-object detection + traditional algorithms for structural obstacles (stairs); Glasses: YOLOv5 + optical flow for face recognition; Navigation: Baidu Map + Beidou with yaw replanning; Interaction: multi-level voice-vibration alerts with family-guardian mini-program sync.
-  * Deployed on Raspberry Pi 5: 10+ obstacle categories with end-to-end latency under 200 ms.
-  * Award: 3rd Prize (National), 2025 China University Computer Competition - AI Creativity Contest.
+- 专业排名：7/58
+- 英语：CET-4 545 / CET-6 548 分
+- 代表课程：
+  - 概率与统计 A：100
+  - 最优化方法：98
+  - 深度学习：94
+  - 计算机视觉基础：90
+  - 大模型技术及其应用：94
+  - 知识工程：90
 
-* **Driver Fatigue Detection & Intelligent Trip Planning with YOLO11 + ViT** (Core Member), 2025
-  * Built the edge inference framework: YOLO11 detects face and key regions, ViT models fatigue-related visual features, forming a perception → risk-warning → trip-planning closed loop.
-  * Deployed on Huawei Atlas 200I DK with NPU acceleration (CANN / MindSpore Lite), achieving real-time fatigue evaluation at 15+ FPS.
-  * Award: 2nd Prize (Provincial), 2025 Ascend AI Innovation Competition.
+## 荣誉奖项
 
-Awards & Honors
-======
-* 2nd Prize (National), 8th National College Embedded Chip & System Design Competition (Chip Application Track), Aug 2025
-* 3rd Prize (National), 2025 China University Computer Competition - AI Creativity Contest, Nov 2025
-* 2nd Prize (Provincial), 2025 Ascend AI Innovation Competition (Liaoning), Dec 2025
-* 2nd Prize (International), 2024 APMCM Asia-Pacific Mathematical Contest in Modeling, 2024
-* 2nd Prize (Provincial), 2024 Higher Education Press Cup National College Mathematical Contest in Modeling (Liaoning), 2024
-* 3rd Prize (Provincial), 7th Global Campus AI Algorithm Elite Competition, 2025
-* Silver Award (Provincial), "CCB Cup" Liaoning College Students Innovation Competition, 2025
-* 3rd Prize (Provincial), 2025 C4 Network Technology Challenge (Northeast Region), 2025
-* Excellence Award, 7th IKCEST "Belt and Road" International Big Data Competition & 11th Baidu-XJTU Big Data Competition, 2025
-* Learning Excellence Scholarship (2nd Class), Dalian University of Technology, 2024-2025
+- 第八届全国大学生嵌入式芯片与系统设计竞赛，国家级二等奖（2025 年 08 月）
+- 2025 中国高校计算机大赛人工智能创意赛，国家级三等奖（2025 年 11 月）
+- 2025 昇腾 AI 创新大赛，省级二等奖（2025 年 12 月）
 
-Skills
-======
-* **Languages**: Python, C/C++ (embedded development)
-* **Deep Learning & Computer Vision**: CNN, Transformer, ViT, YOLO series (YOLOv5 / YOLOv8 / YOLO11), MediaPipe, vision-language models, open-vocabulary recognition
-* **Edge AI Deployment**: RK3588 (RKNN / NPU), Raspberry Pi 5, Huawei Atlas 200I DK (CANN / MindSpore Lite), model conversion and inference optimization
-* **Tools**: Git, LaTeX
+## 学术经历
 
-Service and leadership
-======
-* Team leader of a national-level competition project (Blind-Assisting System), leading a 3-person team through requirement analysis, architecture design and deployment.
+**科研论文（在投，第一作者）**
+
+- 研究内容：面向角膜反射图像的开放词汇物体识别问题，提出光学引导的提示合成流水线构建配对合成训练数据，设计退化感知反射增强网络（REDA-Net）结合场景引导的特权上下文训练，打通虹膜定位 → 反射增强 → VLM 零样本开放词汇识别的完整框架。
+- 研究成果：在合成基准上将语义匹配准确率从 51.50% 提升至 66.17%，在树莓派 5 上端到端推理延迟仅 319.89ms。论文目前双盲审稿中。
+
+## 竞赛经历
+
+### 基于 RK3588 的多模态手语双向翻译系统
+
+- 我的工作：核心成员。面向听障人士，在瑞芯微 RK3588 平台设计并实现端侧手语识别与生成双向翻译系统的整体代码框架，打通数据采集 → 关键点提取 → 模型推理 → 可视化反馈的完整端侧链路。识别侧采用 MediaPipe 提取手部 21 个关键点并做归一化与特征工程，静态手势使用 CNN 分类，连续手语使用 CNN 提取帧级特征并由 Transformer 建模时序依赖输出短语结果；生成侧对中英文文本分词并映射手语素材拼接生成连贯手语动画。最终完成在 RK3588 ELF2 开发板上的部署与 NPU 推理加速，支持 30+ 种静态手势与连续短语的实时双向翻译。
+- 项目成果：第八届全国大学生嵌入式芯片与系统设计竞赛全国总决赛二等奖。
+
+### 基于群体感知的盲杖-眼镜融合式助盲方案
+
+- 我的工作：队长。面向视障出行，提出盲杖负责脚下风险与眼镜负责眼前风险的分布式协同助盲方案，推进需求拆解与模块协同落地，完成树莓派5端部署与性能调优。盲杖端用YOLOv8识别动态目标并结合传统算法检测台阶等结构性障碍，眼镜端用YOLOv5与光流实现人脸识别与辅助理解，导航侧融合百度地图与北斗定位并提供偏航重规划，交互侧通过语音与振动的分级告警机制输出渐进式引导，同时将关键状态同步到家属守护小程序。实现10+类障碍物实时检测与分级告警，端到端响应延迟控制在200ms以内。
+- 项目成果：2025 中国高校计算机大赛人工智能创意赛全国总决赛三等奖。
+
+### 基于 YOLO11 与 ViT 的驾驶员疲劳检测与智能行程规划系统
+
+- 我的工作：核心成员。面向车载端侧智能场景，搭建端侧推理代码框架，使用 YOLO11 检测人脸与关键区域，使用 ViT 对疲劳相关视觉特征进行建模并输出疲劳状态评估结果，实现风险提醒与行程规划联动，形成感知到决策闭环。完成模型在 Atlas 200I DK 开发板上的部署与 NPU 推理加速，实现实时疲劳状态评估，推理帧率达 15+ FPS。
+- 项目成果：2025 华为昇腾 AI 创新大赛省级二等奖。
