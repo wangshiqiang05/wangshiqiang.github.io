@@ -1,0 +1,135 @@
+---
+layout: single
+title: "王世强 - CV"
+permalink: /cv/
+author_profile: false
+---
+
+{% include base_path %}
+
+<style>
+  .page__title { display: none !important; }
+
+  .resume {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    padding: 42px 54px 46px;
+    font-family: "SimSun", "Songti SC", "STSong", "Noto Serif CJK SC", serif;
+    color: #000000;
+    line-height: 1.65;
+  }
+
+  /* ---------- 头部：居中姓名 + 右侧证件照 + 联系信息 ---------- */
+  .resume-header { position: relative; text-align: center; padding-bottom: 14px; }
+  .resume-name {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 10px;
+    margin: 0 0 8px 10px;
+    color: #000000;
+  }
+  .resume-contact { font-size: 13px; margin: 0; color: #000000; }
+  .resume-photo { position: absolute; top: 0; right: 0; width: 92px; }
+  .resume-photo img {
+    width: 92px;
+    height: 110px;
+    object-fit: cover;
+    border: 1px solid #bbbbbb;
+  }
+
+  /* ---------- 板块标题：带图标 + 下划线 ---------- */
+  .resume-section {
+    font-size: 17px;
+    font-weight: 700;
+    color: #000000;
+    border-bottom: 2px solid #000000;
+    padding: 0 0 4px 0;
+    margin: 26px 0 12px 0;
+    letter-spacing: 2px;
+  }
+  .resume-section i { margin-right: 8px; }
+
+  /* ---------- 教育背景 ---------- */
+  .resume-edu-row { display: flex; justify-content: space-between; }
+  .resume-edu { font-weight: 700; }
+  .resume-courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 4px 0 0 0;
+  }
+
+  /* ---------- 荣誉奖项 ---------- */
+  .resume-award { display: flex; justify-content: space-between; }
+  .resume-award-date { white-space: nowrap; }
+
+  /* ---------- 学术经历 / 竞赛经历 ---------- */
+  .resume-paper { font-weight: 700; }
+  .resume-project-title { font-weight: 700; margin: 12px 0 2px 0; }
+  .resume-bullet { margin: 2px 0; }
+</style>
+
+<div class="resume">
+
+  <div class="resume-header">
+    <div class="resume-photo"><img src="{{ base_path }}/images/profile.png" alt="证件照"></div>
+    <h1 class="resume-name">王世强</h1>
+    <p class="resume-contact">wangshiqiang0508@163.com · 17604091853</p>
+  </div>
+
+  <!-- 教育背景 -->
+  <h2 class="resume-section"><i class="fas fa-graduation-cap"></i>教育背景</h2>
+  <div class="resume-edu-row">
+    <span class="resume-edu">大连理工大学</span>
+    <span class="resume-edu">2023 - 至今</span>
+  </div>
+  <p>未来技术学院人工智能创新班</p>
+  <p>专业排名：7/58 · 英语：CET-4 545 / CET-6 548分</p>
+  <div class="resume-courses">
+    <span>· 概率与统计A 100</span>
+    <span>· 深度学习 94</span>
+    <span>· 计算机视觉基础 90</span>
+    <span>· 最优化方法 98</span>
+    <span>· 大模型技术及其应用 94</span>
+    <span>· 知识工程 90</span>
+  </div>
+
+  <!-- 荣誉奖项 -->
+  <h2 class="resume-section"><i class="fas fa-award"></i>荣誉奖项</h2>
+  <div class="resume-award">
+    <span>第八届全国大学生嵌入式芯片与系统设计竞赛，国家级二等奖</span>
+    <span class="resume-award-date">2025年08月</span>
+  </div>
+  <div class="resume-award">
+    <span>2025中国高校计算机大赛人工智能创意赛，国家级三等奖</span>
+    <span class="resume-award-date">2025年11月</span>
+  </div>
+  <div class="resume-award">
+    <span>2025昇腾AI创新大赛，省级二等奖</span>
+    <span class="resume-award-date">2025年12月</span>
+  </div>
+
+  <!-- 学术经历 -->
+  <h2 class="resume-section"><i class="fas fa-book-open"></i>学术经历</h2>
+  <p class="resume-paper">科研论文（在投，第一作者）</p>
+  <p class="resume-bullet">· 研究内容：面向角膜反射图像的开放词汇物体识别问题，提出光学引导的提示合成流水线构建配对合成训练数据，设计退化感知反射增强网络（REDA-Net）结合场景引导的特权上下文训练，打通虹膜定位 → 反射增强 → VLM零样本开放词汇识别的完整框架。</p>
+  <p class="resume-bullet">· 研究成果：在合成基准上将语义匹配准确率从51.50%提升至66.17%，在树莓派5上端到端推理延迟仅319.89ms。论文目前双盲审稿中。</p>
+
+  <!-- 竞赛经历 -->
+  <h2 class="resume-section"><i class="fas fa-flag"></i>竞赛经历</h2>
+
+  <p class="resume-project-title">基于RK3588的多模态手语双向翻译系统</p>
+  <p class="resume-bullet">· 我的工作：核心成员。面向听障人士，在瑞芯微RK3588平台设计并实现端侧手语识别与生成双向翻译系统的整体代码框架，打通数据采集 → 关键点提取 → 模型推理 → 可视化反馈的完整端侧链路。识别侧采用MediaPipe提取手部21个关键点并做归一化与特征工程，静态手势使用CNN分类，连续手语使用CNN提取帧级特征并由Transformer建模时序依赖输出短语结果；生成侧对中英文文本分词并映射手语素材拼接生成连贯手语动画。最终完成在RK3588 ELF2开发板上的部署与NPU推理加速，支持30+种静态手势与连续短语的实时双向翻译。</p>
+  <p class="resume-bullet">· 项目成果：第八届全国大学生嵌入式芯片与系统设计竞赛全国总决赛二等奖。</p>
+
+  <p class="resume-project-title">基于群体感知的盲杖-眼镜融合式助盲方案</p>
+  <p class="resume-bullet">· 我的工作：队长。面向视障出行，提出盲杖负责脚下风险与眼镜负责眼前风险的分布式协同助盲方案，推进需求拆解与模块协同落地，完成树莓派5端部署与性能调优。盲杖端用YOLOv8识别动态目标并结合传统算法检测台阶等结构性障碍，眼镜端用YOLOv5与光流实现人脸识别与辅助理解，导航侧融合百度地图与北斗定位并提供偏航重规划，交互侧通过语音与振动的分级告警机制输出渐进式引导，同时将关键状态同步到家属守护小程序。实现10+类障碍物实时检测与分级告警，端到端响应延迟控制在200ms以内。</p>
+  <p class="resume-bullet">· 项目成果：2025中国高校计算机大赛人工智能创意赛全国总决赛三等奖。</p>
+
+  <p class="resume-project-title">基于YOLO11与ViT的驾驶员疲劳检测与智能行程规划系统</p>
+  <p class="resume-bullet">· 我的工作：核心成员。面向车载端侧智能场景，搭建端侧推理代码框架，使用YOLO11检测人脸与关键区域，使用ViT对疲劳相关视觉特征进行建模并输出疲劳状态评估结果，实现风险提醒与行程规划联动，形成感知到决策闭环。完成模型在Atlas 200I DK开发板上的部署与NPU推理加速，实现实时疲劳状态评估，推理帧率达15+ FPS。</p>
+  <p class="resume-bullet">· 项目成果：2025华为昇腾AI创新大赛省级二等奖。</p>
+
+</div>
